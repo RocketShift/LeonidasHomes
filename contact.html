@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favico.png">
+
+    <title>Contact : Leonidas Homes</title>
+  
+    <!-- CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">  
+    <link href="./css/theme.css" rel="stylesheet">  
+    <link href="./css/theme-extended.css" rel="stylesheet">  
+
+   
+  </head>
+
+  <body> 
+    <header class="default">
+      <div class="gradient"></div>
+      <div class ="header-background" style="background-image: url(./img/mainbanner17.jpg);">
+           <div class="container">
+              <h1>Contact</h1>
+           </div>
+      </div>
+      <nav>
+        <div class="container"> 
+          <div class="nav-block">
+            <div class="logo">
+              <img src="./img/logotop.png" alt=""> 
+            </div>
+            <div class="nav-list primary_nav_wrap hidden-xs">
+              <div id="primary_nav_wrap">
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="#">leonidas</a>
+                    <ul>
+                      <li><a href="./about.html">about</a></li>
+                      <li><a href="./heritage.html">our heritage</a></li> 
+                    </ul>
+                  </li> 
+                  <li><a href="./homes.html">homes</a></li>
+                  <li><a href="./gallery.html">galleries</a></li>
+                  <li class="active"><a href="./contact.html">contact</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="nav-list mobile-menu visible-xs">
+              <a href="#" id="mobile-menu">Menu</a>
+            </div>
+          </div>
+        </div>
+      </nav> 
+    </header>
+    
+    <div class="nav-list-mobile visible-xs">
+        <div><img src="./img/logotop.png" alt="" width="100%"> </div>
+        <div><a href="./index.html">Home</a></div>
+        <div><a href="./about.html">about</a></div>
+        <div><a href="./heritage.html">our heritage</a>   </div>
+        <div><a href="./homes.html">homes</a></div>
+        <div><a href="./gallery.html">galleries</a></div>
+        <div><a href="./contact.html">contact</a> </div>
+    </div>
+
+    <!-- newsletter-section -->
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <div class="primary-title">
+          Get in touch <span class = "blue-title">With Us</span>
+        </div>
+        <div class="contact-div">
+          <div class="contact">
+            <p>Ph 281-222-2888</p>
+            <p>vasilis@leonidashomes.com</p>
+            <p>1808 Fairview Street, Houston, TX 77006</p>
+          </div>
+          <div class="contact-form">
+            <div class="form">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="form">
+              <input type="text" placeholder="Phone">
+            </div>
+            <div class="form text-right hidden-xs">
+              <a href="#" class="btn-prime">
+                Send <img src="./img/arrowsita1-right.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <div class="form">
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="form">
+              <textarea placeholder="Message"></textarea>
+            </div>
+             <div class="form text-right visible-xs">
+              <a href="#" class="btn-prime">
+                Send <img src="./img/arrowsita1-right.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .newsletter-section -->
+
+    <!-- Leonidas Google Map -->
+    <div class="container" style = "height:283px;padding-bottom:50px;">
+        <iframe class="actAsDiv" style="width:100%;height:100%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;q=Leonidas%20Homes%2C%201808%20Fairview%20Street%2C%20Houston%2C%20TX%2077006&amp;aq=0&amp;ie=UTF8&amp;t=m&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe>
+    </div>
+    <!-- Leonidas Google Map -->
+
+    <!-- parallax-section -->
+    <section class="parallax-section parallaxie" style='background: url("./img/mainbanner10.jpg")' data-parallaxie='{"speed": -0.4"size": "auto"}'>
+      <div class="container">
+         <p>Get to know Leonidas Homes, Houston’s premier builder of luxury homes as unique as you are.</p>
+      </div>
+    </section>
+    <!-- .parallax-section -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <img src="./img/logotop2.png" alt="">
+        <div class="copyright">
+          Copyright © 2017 Leonidas Homes. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script src="./js/bootstrap.min.js"></script> 
+    <script src="./js/parallaxie.js"></script>  
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      $('.parallaxie').parallaxie();
+      $.fn.extend({
+          toggleText: function(a, b){
+              return this.text(this.text() == b ? a : b);
+          }
+      });
+      $('#mobile-menu').on('click', function(){
+        $('.nav-list-mobile').toggleClass('open');
+        $(this).toggleText('MENU', 'CLOSE');
+       });
+    </script>
+  </body>
+</html>
